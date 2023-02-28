@@ -79,7 +79,7 @@ copy runnig-config startup-config
 ```
 ### Part 3: Configure Passive Interfaces
 
-Configure the OSPF process on each of the three routers with the passive-interface command.
+Configure the OSPF process on each of the three routers with the passive-interface command. The passive-interface command will prevent the OSPF process from sending unnecessary routing protocol traffic out LAN interfaces.
 ```yaml
 Lan Interface:
 · R1: g0/0/0
