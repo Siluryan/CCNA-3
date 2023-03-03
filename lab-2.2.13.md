@@ -1,6 +1,6 @@
 ## Point-to-Point Single-Area OSPFv2 Configuration
 
-![](./images/lab-2.2.13.png)
+![](./images/img-lab-2.2.13/lab-2.2.13.png)
 
 ### Part 1: Configure router IDs.
 
