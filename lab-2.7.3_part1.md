@@ -1,6 +1,6 @@
 ## Part 1
 
-![](./images/img-lab-2.7.3/lab-2.7.3-img1.png)
+![](./images/img-lab-2.7.3/lab-2.7.3_img1.png)
 
 
 ### Evaluate Single-Area OSPF Network Operation
@@ -34,7 +34,7 @@ B1_R4>
 ```
 e. Execute the **show ip route** command. Notice the size of the routing table and the routes learned via OSPF from the routers in the Sao Paulo Branch Office.
 
-##### B1_R4 output:
+#### B1_R4 output:
 ```bash
 Gateway of last resort is not set
 
@@ -93,7 +93,6 @@ f. On B1_R4, execute the **show ip ospf** command.
 ```
 
 *Questions:*
-
 - Record the number of times that the SPF algorithm has been executed.
 
 - How many areas are displayed on router B1_R4?
@@ -122,7 +121,6 @@ O       192.168.3.1/32 [110/2] via 192.168.0.3, 00:24:09, GigabitEthernet0/0/0
 Notice that the B1_R2 routing table, with the exception of local and connected routes, has learned the same routes via OSPF as B1_R4.
 
 *Question:*
-
 - Record the number of times that the SPF algorithm has been executed.
 
 ### Step 2: Explore OSPF in the Branch Office.
@@ -213,7 +211,6 @@ External flood list length 0
 
 ```
 *Questions:*
-
 - Record the number of times that the SPF algorithm has been executed.
 
 - How many areas are displayed on router B2_R3?
@@ -227,8 +224,8 @@ j. Issue the **show ip route** and the **show ip ospf** commands on one router i
 *Question:*
 - Are the two networks missing from both of the routing tables and have the SPF algorithm executions increased?
 
-**Note**: Every router, in both buildings, has been forced to do extra SPF algorithm executions. Because all of the routers are in the same area, every change to the topology will cause OSPF to execute the SPF algorithm on each router. This is not a problem for small networks, but for large networks, excessive SPF calculations can impact network performance. The solution is to divide the OSPF topology into multiple areas. Changes in topology in one area will not cause SPF recalculations in other areas.
+**Note:** Every router, in both buildings, has been forced to do extra SPF algorithm executions. Because all of the routers are in the same area, every change to the topology will cause OSPF to execute the SPF algorithm on each router. This is not a problem for small networks, but for large networks, excessive SPF calculations can impact network performance. The solution is to divide the OSPF topology into multiple areas. Changes in topology in one area will not cause SPF recalculations in other areas.
 
 You have completed Part 1: Evaluate Network Operation of Single-Area OSPF.
 
-To continue to Part 2: Evaluate Multiarea OSPF Network Operation, close this Packet Tracer file. Return to the online course and open the Multiarea OSPF Exploration - Physical Mode (Part2) Packet Tracer file.
+To continue to Part 2: close this Packet Tracer file. Return to the online course and open the Multiarea OSPF Exploration - Physical Mode (Part2) Packet Tracer file.
