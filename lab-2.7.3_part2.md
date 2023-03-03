@@ -303,7 +303,7 @@ Compare the output of A51_R4 to the output of A1_R4. You should notice that all 
 - What could be done to avoid the area 51 recalculations?
 
 b. Navigate to A1_ABR1. Using the CLI tab, enter the following commands to implement **OSPF summarization** for the 192.168.0.0 network in area 1:
-```json
+```
 A1_ABR1>enable
 
 A1_ABR1#configure terminal
